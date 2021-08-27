@@ -47,7 +47,7 @@ export default class App extends React.Component {
             var word = this.state.text.toLowerCase().trim();
             //var word = word2.trim;
             db[word] 
-            ? (this.setState({chunks: db[word].chunks}),this.setState({phones: db[word].phones}))
+            ? (this.setState({chunks: db[word].chunks}),this.setState({phonicS: db[word].phones}))
             : alert('The word does not exists here.')
           }}>
             <Text style={styles.buttonText}>GO</Text>
